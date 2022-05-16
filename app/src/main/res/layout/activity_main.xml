@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/moon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_pilihan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_regular"
+            android:layout_marginTop="@dimen/font_regular_med"
+            android:layout_marginEnd="@dimen/spacing_regular"
+            android:fontFamily="@font/monsemibolld"
+            android:text="@string/text_pilihan_keluarga"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_poster" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small_med"
+            android:background="@color/color_transparent"
+            android:contentDescription="@string/cd_icon"
+            android:src="@drawable/ic_imgbtn_popular"
+            app:layout_constraintEnd_toStartOf="@id/imgbtn_on_air"
+            app:layout_constraintStart_toStartOf="@+id/tv_pilihan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pilihan" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_on_air"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_regular_large"
+            android:background="@color/color_transparent"
+            android:contentDescription="@string/cd_icon"
+            android:src="@drawable/ic_imgbtn_onair"
+            app:layout_constraintBottom_toBottomOf="@+id/imgbtn_popular"
+            app:layout_constraintEnd_toStartOf="@id/imgbtn_today"
+            app:layout_constraintStart_toEndOf="@+id/imgbtn_popular"
+            app:layout_constraintTop_toTopOf="@+id/imgbtn_popular" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_regular_large"
+            android:background="@color/color_transparent"
+            android:contentDescription="@string/cd_icon"
+            android:src="@drawable/ic_imgbtn_today"
+            app:layout_constraintBottom_toBottomOf="@+id/imgbtn_on_air"
+            app:layout_constraintStart_toEndOf="@+id/imgbtn_on_air"
+            app:layout_constraintTop_toTopOf="@+id/imgbtn_on_air" />
+
+        <TextView
+            android:id="@+id/tv_weekend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:fontFamily="@font/monsemibolld"
+            android:text="@string/text_recommend"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imgbtn_popular"
+            app:layout_constraintTop_toBottomOf="@id/imgbtn_popular" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/moon_knight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_regular"
+            android:layout_marginTop="@dimen/spacing_small_med"
+            android:layout_marginEnd="@dimen/spacing_regular"
+            android:background="@drawable/bg_moon_knight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_weekend">
+
+            <ImageView
+                android:id="@+id/iv_moon_knight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cd_image"
+                android:padding="@dimen/spacing_small"
+                android:src="@drawable/knight"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_moon_knight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:fontFamily="@font/monsemibolld"
+                android:text="@string/text_moon_knight"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small_med"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_moon_knight"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_desc_moon_knight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_smaller"
+                android:fontFamily="@font/monreguler"
+                android:text="@string/text_desc_moon_knight"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintEnd_toEndOf="@+id/tv_moon_knight"
+                app:layout_constraintStart_toStartOf="@+id/tv_moon_knight"
+                app:layout_constraintTop_toBottomOf="@+id/tv_moon_knight" />
+
+            <TextView
+                android:id="@+id/tv_popular_moon_knight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_regular_large"
+                android:fontFamily="@font/monmed"
+                android:text="@string/text_pop_moon_knight"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintStart_toStartOf="@+id/tv_desc_moon_knight"
+                app:layout_constraintTop_toBottomOf="@+id/tv_desc_moon_knight" />
+
+            <TextView
+                android:id="@+id/tgl_moon_knight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:fontFamily="@font/monmed"
+                android:text="@string/text_tgl_moon_knight"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_popular_moon_knight"
+                app:layout_constraintStart_toEndOf="@+id/tv_popular_moon_knight"
+                app:layout_constraintTop_toTopOf="@+id/tv_popular_moon_knight" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/halo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_regular"
+            android:layout_marginTop="@dimen/spacing_small_med"
+            android:layout_marginEnd="@dimen/spacing_regular"
+            android:background="@drawable/bg_moon_knight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moon_knight">
+
+            <ImageView
+                android:id="@+id/iv_halo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cd_image"
+                android:padding="@dimen/spacing_small"
+                android:src="@drawable/halo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_halo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:fontFamily="@font/monsemibolld"
+                android:text="@string/text_halo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small_med"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_halo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_desc_halo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_smaller"
+                android:fontFamily="@font/monreguler"
+                android:text="@string/text_desc_halo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintEnd_toEndOf="@+id/tv_halo"
+                app:layout_constraintStart_toStartOf="@+id/tv_halo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_halo" />
+
+            <TextView
+                android:id="@+id/tv_popular_halo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_regular_large"
+                android:fontFamily="@font/monmed"
+                android:text="@string/text_pop_halo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintStart_toStartOf="@+id/tv_desc_halo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_desc_halo" />
+
+            <TextView
+                android:id="@+id/tgl_halo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:fontFamily="@font/monmed"
+                android:text="@string/text_tgl_halo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_popular_halo"
+                app:layout_constraintStart_toEndOf="@+id/tv_popular_halo"
+                app:layout_constraintTop_toTopOf="@+id/tv_popular_halo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/spy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_regular"
+            android:layout_marginTop="@dimen/spacing_small_med"
+            android:layout_marginEnd="@dimen/spacing_regular"
+            android:background="@drawable/bg_moon_knight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/halo">
+
+            <ImageView
+                android:id="@+id/iv_spy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cd_image"
+                android:padding="@dimen/spacing_small"
+                android:src="@drawable/spy"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_spy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:fontFamily="@font/monsemibolld"
+                android:text="@string/text_spy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small_med"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_spy"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_desc_spy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_smaller"
+                android:fontFamily="@font/monreguler"
+                android:text="@string/text_desc_spy"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintEnd_toEndOf="@+id/tv_spy"
+                app:layout_constraintStart_toStartOf="@+id/tv_spy"
+                app:layout_constraintTop_toBottomOf="@+id/tv_spy" />
+
+            <TextView
+                android:id="@+id/tv_popular_spy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_regular_med"
+                android:fontFamily="@font/monmed"
+                android:text="@string/text_pop_spy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintStart_toStartOf="@+id/tv_desc_spy"
+                app:layout_constraintTop_toBottomOf="@+id/tv_desc_spy" />
+
+            <TextView
+                android:id="@+id/tgl_spy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:fontFamily="@font/monmed"
+                android:text="@string/text_tgl_spy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_popular_spy"
+                app:layout_constraintStart_toEndOf="@+id/tv_popular_spy"
+                app:layout_constraintTop_toTopOf="@+id/tv_popular_spy" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_regular"
+            android:layout_marginTop="@dimen/spacing_small_med"
+            android:layout_marginEnd="@dimen/spacing_regular"
+            android:layout_marginBottom="@dimen/spacing_regular"
+            android:background="@drawable/bg_moon_knight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spy">
+
+            <ImageView
+                android:id="@+id/iv_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cd_image"
+                android:padding="@dimen/spacing_small"
+                android:src="@drawable/grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_grey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:fontFamily="@font/monsemibolld"
+                android:text="@string/text_grey"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small_med"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_grey"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_desc_grey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_smaller"
+                android:fontFamily="@font/monreguler"
+                android:text="@string/text_desc_grey"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintEnd_toEndOf="@+id/tv_grey"
+                app:layout_constraintStart_toStartOf="@+id/tv_grey"
+                app:layout_constraintTop_toBottomOf="@+id/tv_grey" />
+
+            <TextView
+                android:id="@+id/tv_popular_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_regular_large"
+                android:fontFamily="@font/monmed"
+                android:text="@string/text_pop_grey"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintStart_toStartOf="@+id/tv_desc_grey"
+                app:layout_constraintTop_toBottomOf="@+id/tv_desc_grey" />
+
+            <TextView
+                android:id="@+id/tgl_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:fontFamily="@font/monmed"
+                android:text="@string/text_tgl_grey"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_tiny"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_popular_grey"
+                app:layout_constraintStart_toEndOf="@+id/tv_popular_grey"
+                app:layout_constraintTop_toTopOf="@+id/tv_popular_grey" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

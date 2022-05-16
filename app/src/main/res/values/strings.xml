@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TvShow</string>
+
+    //dashboard
+    <string name="text_pilihan_keluarga">Pilihan Keluarga</string>
+    <string name="text_popular">Popular</string>
+    <string name="text_recommend">Recommend Weekend</string>
+    <string name="text_moon_knight">Moon Knight</string>
+    <string name="text_desc_moon_knight">When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life.</string>
+    <string name="text_pop_moon_knight">4990.135</string>
+    <string name="text_tgl_moon_knight">2022–03–30</string>
+    <string name="text_halo">Halo</string>
+    <string name="text_desc_halo">Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply.</string>
+    <string name="text_pop_halo">5238.03</string>
+    <string name="text_tgl_halo">2022–03–24</string>
+    <string name="text_spy">SPY x FAMILY</string>
+    <string name="text_desc_spy">Master spy Twilight is the best at what he does when it comes to going undercover on dangerous missions in the name of a better world.</string>
+    <string name="text_pop_spy">1185.096</string>
+    <string name="text_tgl_spy">2022–04–09</string>
+    <string name="text_grey">Grey\'s Anatomy</string>
+    <string name="text_desc_grey">Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.</string>
+    <string name="text_pop_grey">966.02</string>
+    <string name="text_tgl_grey">2005–03–27</string>
+
+    //onair
+    <string name="text_airing_on_air">Airing On Air</string>
+
+    //today
+    <string name="text_today">Tv Today</string>
+
+    //popular
+    <string name="text_popular_back">Tv Popular</string>
+
+
+    //content description
+    <string name="cd_image">image</string>
+    <string name="cd_icon">icon</string>
+    <string name="text_tittle_tv">tittle tv</string>
+    <string name="text_popularity_tv">popularity tv</string>
+    <string name="text_vote_tv">vote tv</string>
+
+
+</resources>
