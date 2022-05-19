@@ -130,7 +130,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_smaller"
+                android:ellipsize="end"
                 android:fontFamily="@font/monreguler"
+                android:maxLines="3"
                 android:text="@string/text_desc_moon_knight"
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_tiny"
@@ -143,12 +145,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_regular_large"
+                android:layout_marginBottom="@dimen/spacing_small"
                 android:fontFamily="@font/monmed"
                 android:text="@string/text_pop_moon_knight"
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_tiny"
-                app:layout_constraintStart_toStartOf="@+id/tv_desc_moon_knight"
-                app:layout_constraintTop_toBottomOf="@+id/tv_desc_moon_knight" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_desc_moon_knight" />
 
             <TextView
                 android:id="@+id/tgl_moon_knight"
@@ -207,7 +210,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_smaller"
+                android:ellipsize="end"
                 android:fontFamily="@font/monreguler"
+                android:maxLines="3"
                 android:text="@string/text_desc_halo"
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_tiny"
@@ -220,12 +225,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_regular_large"
+                android:layout_marginBottom="@dimen/spacing_small"
                 android:fontFamily="@font/monmed"
                 android:text="@string/text_pop_halo"
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_tiny"
-                app:layout_constraintStart_toStartOf="@+id/tv_desc_halo"
-                app:layout_constraintTop_toBottomOf="@+id/tv_desc_halo" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_desc_halo" />
 
             <TextView
                 android:id="@+id/tgl_halo"
@@ -284,10 +290,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_smaller"
-                android:fontFamily="@font/monreguler"
-                android:text="@string/text_desc_spy"
-                android:maxLines="3"
                 android:ellipsize="end"
+                android:fontFamily="@font/monreguler"
+                android:maxLines="3"
+                android:text="@string/text_desc_spy"
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_tiny"
                 app:layout_constraintEnd_toEndOf="@+id/tv_spy"
@@ -299,12 +305,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_regular_med"
+                android:layout_marginBottom="@dimen/spacing_small"
                 android:fontFamily="@font/monmed"
                 android:text="@string/text_pop_spy"
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_tiny"
-                app:layout_constraintStart_toStartOf="@+id/tv_desc_spy"
-                app:layout_constraintTop_toBottomOf="@+id/tv_desc_spy" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_desc_spy" />
 
             <TextView
                 android:id="@+id/tgl_spy"
@@ -378,12 +385,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_regular_large"
+                android:layout_marginBottom="@dimen/spacing_small"
                 android:fontFamily="@font/monmed"
                 android:text="@string/text_pop_grey"
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_tiny"
-                app:layout_constraintStart_toStartOf="@+id/tv_desc_grey"
-                app:layout_constraintTop_toBottomOf="@+id/tv_desc_grey" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_desc_grey" />
 
             <TextView
                 android:id="@+id/tgl_grey"

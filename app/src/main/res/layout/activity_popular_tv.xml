@@ -54,11 +54,10 @@
         android:id="@+id/rv_popular_tv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/spacing_regular"
-        android:layout_marginBottom="@dimen/spacing_large"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/back_popular"
         app:spanCount="2"
         tools:listitem="@layout/item_popular_tv" />
